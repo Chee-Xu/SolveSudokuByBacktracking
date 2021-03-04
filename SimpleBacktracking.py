@@ -1,6 +1,6 @@
 import time
 """
-The following board is a very complex one and very targeted to backtracking method.
+The following board is a very complex one and very targeted to backtracking method. On my Pycharm, it takes about 3.46875 seconds to solve it.
 Simply because that many liitle tricks can force this algorithm to keep going back and back...
 Therefore, it is not very efficient, we need to reduce the number of times that backtracks.
 But, it is really useful for beginner for this alogrithm to understand the logic of it.

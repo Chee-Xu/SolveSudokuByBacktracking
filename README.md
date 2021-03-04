@@ -17,10 +17,12 @@ The basic ideas are:
 
 To reduce the number of times that backtracking:
 
+Idea 1:
 
-   idea 1:
 	-possible answer list : only try the numbers that are not shown in the same row, col and box.
-   idea 2:
+	
+Idea 2:
+
 	-try the smallest length of idea 1 due to a higher chance to be correct.
 
 

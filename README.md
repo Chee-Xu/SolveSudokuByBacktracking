@@ -17,10 +17,12 @@ The basic ideas are:
 
 To reduce the number of times that backtracking:
 
+
    idea 1:
 	-possible answer list : only try the numbers that are not shown in the same row, col and box.
    idea 2:
 	-try the smallest length of idea 1 due to a higher chance to be correct.
+
 
 In general, this could improve the backtracking algorithm significantly in the hard mode.
 Simply because that idea 2 can greatly improve the accuracy.

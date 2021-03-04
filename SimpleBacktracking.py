@@ -4,6 +4,10 @@ The following board is a very complex one and very targeted to backtracking meth
 Simply because that many liitle tricks can force this algorithm to keep going back and back...
 Therefore, it is not very efficient, we need to reduce the number of times that backtracks.
 But, it is really useful for beginner for this alogrithm to understand the logic of it.
+
+The author of this code is Tim, you can find his Youtube:
+https://www.youtube.com/watch?v=eqUwSA0xI-s&t=396s
+To see a better explaination..
 """
 board = [
     [0, 0, 2, 0, 6, 0, 0, 3, 0],

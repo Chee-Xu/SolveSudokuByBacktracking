@@ -35,24 +35,30 @@ def solve(board):
 
 
 def ava(board, row, col):  # avaliable answers
-    a_list = []
+    """
+    The idea is to append all of numbers that exist on the same row, col and box, and save them in the list.
+    The programme will only try numbers that not in the list, which will reduce the number of times that backtracking.
+    """
+    
+    a_list = []                                 
     b_list = [i for i in range(1, 10)]
 
-    for i in range(9):
+    for i in range(9): # row
         if board[row][i] != 0:
             a_list.append(board[row][i])
-    for j in range(9):
+            
+    for j in range(9): # col
         if board[j][col] != 0:
             a_list.append(board[j][col])
 
     x = row // 3
     y = col // 3
-    for z in range(x * 3, x * 3 + 3):
+    for z in range(x * 3, x * 3 + 3): # box
         for z1 in range(y * 3, y * 3 + 3):
             if board[z][z1] != 0:
                 a_list.append(board[z][z1])
 
-    ava_list = list(set(b_list) - set(a_list))
+    ava_list = list(set(b_list) - set(a_list)) # set can reduce duplication.
     ava_list = sorted(ava_list)
     return ava_list
 
